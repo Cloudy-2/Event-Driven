@@ -1,14 +1,19 @@
 <?php
+// Database Credentials
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database_name = "edp";
 
-// Attempt to connect to the database
+$database_name = "db_test";
+
+// Create connection
 $conn = new mysqli($servername, $username, $password, $database_name);
 
-// Check for connection errors
+// Check connection
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+  die("Connection failed: " . $conn->connect_error);
 }
+
+//echo "Connected successfully";
+
 ?>
